@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Game Mata Mosca</title>
+     
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="jasonmosca.js"></script>
+</head>
+<body onresize="ajustatela()">
+
+
+    <div class="painel">
+    	<div class="vidas">
+    		<img id="v1" src="https://e7.pngegg.com/pngimages/991/871/png-clipart-red-heart-illustration-heart-dark-red-heart-hd-love-image-file-formats.png" width="30px" />
+    		<img id="v2" src="https://e7.pngegg.com/pngimages/991/871/png-clipart-red-heart-illustration-heart-dark-red-heart-hd-love-image-file-formats.png" width="30px" />
+    		<img id="v3" src="https://e7.pngegg.com/pngimages/991/871/png-clipart-red-heart-illustration-heart-dark-red-heart-hd-love-image-file-formats.png" width="30px" />
+    	</div>
+
+    	<div class="cronometro"> tempo restante: <span id="cronometro"></span></div>
+
+    </div>
+	
+
+<script>
+	document.getElementById('cronometro').innerHTML = tempo
+
+	var criamosquito = setInterval(function() {
+	posicaoRandomica()
+}, criamosquitotempo)
+</script>
+</body>
+</html>

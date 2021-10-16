@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="estilo.css"/>
+
+		<script>
+			function iniciarjogo(){
+              var nivel = document.getElementById('nivel').value
+
+              if(nivel === '') {
+              	alert('Selecione um nivel para iniciar o jogo')
+              	return false
+              }
+
+              window.location.href = "app.html?" + nivel	
+
+              	}
+		</script>
+	</head>
+	<body class="fundo">
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img src="https://image.tmdb.org/t/p/w342/nGReknA4c4owJYRFX4RdeL1s5ze.jpg" width="300px" class="btn btn-danger btn-lg">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+                           
+                     <div class="mb-2">    
+						<select class="form-control" id="nivel">
+							<option value="">-- selecione o nível--</option>
+							<option value="normal">Normal</option>
+							<option value="dificil">Difícil</option>
+							<option value="hardcore">Hardcore</option>
+						</select>
+					</div> 
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-danger btn-lg" onclick="iniciarjogo()">Iniciar jogo</button>
+					</div>
+
+					<div>
+						<h2>O jogo é simples clique em cima da mosca quando ela aparecer mantenha-se vivo até o final do tempo do jogo e pronto. Vítória!</h2>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
